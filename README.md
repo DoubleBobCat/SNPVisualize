@@ -3,6 +3,9 @@ This is a kit to visualize the SNP.
 **Could only support VCF file at source!**  
 **Some codes need to be rewrite**, but they are able to use, just they are unclean& beauty for me.
 
+# Demo Figure
+![demo](doc/img/demo.jpg)
+
 # How to use
 ## stp0, prepare for your data& this kit
 To prepare the datas for you project, you must be followd by:
