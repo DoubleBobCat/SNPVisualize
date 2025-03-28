@@ -133,7 +133,7 @@ for (file in csv_files) {
     paste0("figs/jpg/", file_name, ".jpg"),
     combined,
     width = 10,
-    height = (35 / 200 * n),
+    height = (35 * n / 200) + 1,
     units = "in",
     limitsize = FALSE
   )
@@ -141,7 +141,7 @@ for (file in csv_files) {
     paste0("figs/svg/", file_name, ".svg"),
     combined,
     width = 10,
-    height = (35 / 200 * n),
+    height = (35 * n / 200) + 1,
     units = "in",
     limitsize = FALSE
   )

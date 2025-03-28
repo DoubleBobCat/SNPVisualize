@@ -1,7 +1,12 @@
+[![DOI](https://zenodo.org/badge/956263831.svg)](https://doi.org/10.5281/zenodo.15099154)
+
 # About
 This is a kit to visualize the SNP.  
 **Could only support VCF file at source!**  
 **Some codes need to be rewrite**, but they are able to use, just they are unclean& beauty for me.
+
+# Demo Figure
+![demo](doc/img/demo.jpg)
 
 # How to use
 ## stp0, prepare for your data& this kit
@@ -42,3 +47,6 @@ In this step, also the final step, the figure will be draw. For output, the jpg 
 Just makesure your bash/cmd/powershell work folder is the root folder for this work, then run ```Rscript stp4.draw.R```.
 
 After running, a new folder "figs" will be create in you root folder for this work, including two folder "jpg" and "svg".
+
+# How to citation
+DoubleCat. (2025). DoubleBobCat/SNPVisualize: beta-V0.0.2 (beta-V0.0.2). Zenodo. https://doi.org/10.5281/zenodo.15099155
