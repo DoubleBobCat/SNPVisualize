@@ -4,7 +4,7 @@ from collections import Counter
 import glob
 
 input_dir = '../../csv_first'
-output_dir = '../../second_csv'
+output_dir = '../../csv_second'
 
 # 确保输出目录存在
 os.makedirs(output_dir, exist_ok=True)

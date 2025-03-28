@@ -127,9 +127,10 @@ for (file in csv_files) {
 
   combined <- fig_form + fig_count + plot_layout(guides = "collect")
 
-  dir.create("../figs/b", recursive = TRUE, showWarnings = FALSE)
+  dir.create("figs/jpg", recursive = TRUE, showWarnings = FALSE)
+  dir.create("figs/svg", recursive = TRUE, showWarnings = FALSE)
   ggsave(
-    paste0("../figs/final/", file_name, ".jpg"),
+    paste0("figs/jpg/", file_name, ".jpg"),
     combined,
     width = 10,
     height = (35 / 200 * n),
@@ -137,7 +138,7 @@ for (file in csv_files) {
     limitsize = FALSE
   )
   ggsave(
-    paste0("../figs/b/", file_name, ".svg"),
+    paste0("figs/svg/", file_name, ".svg"),
     combined,
     width = 10,
     height = (35 / 200 * n),
