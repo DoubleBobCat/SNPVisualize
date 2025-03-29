@@ -2,7 +2,7 @@ import os
 import vcf2csvAjson as v2caj
 
 vcf_lib = '../../vcf'
-vcf_split_lib = '../../vcf_split'
+vcf_split_lib = '../../stp1_vcfSplit'
 
 if not os.path.exists((vcf_lib)):
     print(f"E: No such dir {vcf_lib}")
