@@ -8,8 +8,8 @@ import queue
 DEBUG_SWITCH = False
 
 BASIC_CONFIG = {
-    "DATA_SOURCE_DIR": '../../vcf_split/',
-    "DATA_OUTPUT_DIR": '../../csv_first/',
+    "DATA_SOURCE_DIR": '../../stp1_vcfSplit/',
+    "DATA_OUTPUT_DIR": '../../stp2_simp/',
     "DATA_FILE_RENAME_FILE": None,
     "DATA_ROW_RENAME_FILE": None,
     "DATA_COL_RENAME_FILE": None,
@@ -38,7 +38,7 @@ BASIC_CONFIG = {
 }
 
 RUN_CONFIG = {
-    "BASE_ORDER": {'A': 1, 'T': 2, 'U': 3, 'C': 4, 'G': 5, '*': 6, '-':7}
+    "BASE_ORDER": {'A': 1, 'T': 2, 'U': 3, 'C': 4, 'G': 5, '*': 6, '-': 7}
 }
 
 if BASIC_CONFIG["LOG_OUTPUT_DIR"] == None:
@@ -51,7 +51,7 @@ else:
         if BASIC_CONFIG["INFO_LOG_SWITCH"] else None
     ERROR_FILE = BASIC_CONFIG["LOG_OUTPUT_DIR"] + 'ERROR.log' \
         if BASIC_CONFIG["ERROR_LOG_SWITCH"] else None
-    
+
 if BASIC_CONFIG["FILE_MAX_THREAD"] == 0:
     FILE_MAX_THREAD = None
 else:
